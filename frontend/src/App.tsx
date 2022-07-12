@@ -1,20 +1,20 @@
-import Header from "./components/Header"
-import SalesCard from "./components/SalesCard"
+import Header from "./components/Header";
+import SalesCard from "./components/SalesCard";
 //import NotificationButton from "./components/NotificationButton/idenx"
 
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <section id="sales">
-            <div className="dsmeta-container">
-              <SalesCard />
-            </div>
-          </section>
-        </main>
+          <div className="dsmeta-container">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
