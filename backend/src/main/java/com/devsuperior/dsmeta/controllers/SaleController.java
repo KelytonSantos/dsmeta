@@ -3,8 +3,11 @@ package com.devsuperior.dsmeta.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dsmeta.entities.Sale;
@@ -18,8 +21,9 @@ public class SaleController {
     private SaleService  service;//aqui lembrar da pilha controller chama o service, o service chama o repository
 
     @GetMapping // configurando minha função para ele responder via web no protocolo http
-    public List<Sale> findSales() {
-        return service.findSale(); /*aqui eu to acessando meu pacote services na classe SaleService na função findSale, 
-        esta por sua vez chama a classe SaleRepository no pacote repositories e está também chama a entities sale*/
+    public Page<Sale> findSales(@RequestParam (value = "minDate", defaultValue = "") String minDate, //Definindo uma variavel String minDate(essa vai receber o valor do front(url))
+                                @RequestParam (value = "maxDate", defaultValue = "") String maxDate, //mesma coisa; daqui elas passam retornando um findSale com os dados que vão para o SaleService onde vão ser tratadas.
+                                Pageable pageable) {//Aqui estamos configurando os parametros de entrada definindo um valor e um valor padrão
+        return service.findSale(minDate, maxDate, pageable);
     }
 }
