@@ -30,7 +30,7 @@ public class SaleController {
         return service.findSale(minDate, maxDate, pageable);
     }
 
-    @GetMapping("/{id}/notification")//to indicando que é um parametro e que vou ter que indicar na requisição
+    @GetMapping("/{id}/notify")//to indicando que é um parametro e que vou ter que indicar na requisição
     public void notifySms(@PathVariable Long id){
         smsService.sendSms(id);
     }
