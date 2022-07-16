@@ -17,12 +17,16 @@ function SalesCard() {
   const [sales, setSales] = useState<Sale[]>([]);
 
   useEffect(() => {
+
+    const dmin = minDate.toISOString().slice(0,10);
+    const dmax = maxDate.toISOString().slice(0,10);
+
     axios
-      .get(`${BASE_URL}/sales`) //importando variavel de ambiente em tal caminho
+      .get(`${BASE_URL}/sales?minDate=${dmin}&maxDate=${dmax}`) //importando variavel de ambiente em tal caminho
       .then((response) => {
         setSales(response.data.content);
       });
-  }, []); //função como primeiro argumento e uma função como segundo argumento//aqui eu faço uma requisição ao meu back no endereço ".." e retorno um dado que foi entrege corretamentes
+  }, [minDate, maxDate]); //função como primeiro argumento e uma função como segundo argumento//aqui eu faço uma requisição ao meu back no endereço ".." e retorno um dado que foi entrege corretamentes
 
   return (
     <div className="dsmeta-card">

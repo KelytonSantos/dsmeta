@@ -840,3 +840,45 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 10:49:02.784
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jneYYUtz => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:37.653
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:37.653
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@94e32be[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=560)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:37.653
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:41.775
+!MESSAGE Boot LS startup time from start to initialized: 4122ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.100
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.NejlqkXHisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.101
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.101
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.102
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.102
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.102
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.NejlqkXH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.103
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.104
+!MESSAGE buffering callback sts4.classpath.NejlqkXH backend false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:42.105
+!MESSAGE executing callback sts4.classpath.NejlqkXH 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:43.829
+!MESSAGE executing callback sts4.classpath.NejlqkXH SUCCESS [done]
