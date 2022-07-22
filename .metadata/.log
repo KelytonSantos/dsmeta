@@ -882,3 +882,6 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 12:47:43.829
 !MESSAGE executing callback sts4.classpath.NejlqkXH SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-07-16 19:46:43.502
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
